@@ -1,0 +1,21 @@
+import random
+user = input("Enter "rock", "paper" or "scissors": \n)
+com = random.randint(0,3)
+if user == "rock" and com == 1:
+  print("Draw")
+elif user == "rock" and com == 2:
+  print("Lose")
+elif user == "rock" and com == 3:
+  print("Win")
+elif user == "paper" and com == 1:
+  print("Win")
+elif user == "paper" and com == 2:
+  print("Draw")
+elif user == "paper" and com == 3:
+  print("Lose")
+elif user == "scissors" and com == 1:
+  print("Lose")
+elif user == "scissors" and com == 2:
+  print("Win")
+elif user == "scissors" and com == 3: 
+  print("Draw")
