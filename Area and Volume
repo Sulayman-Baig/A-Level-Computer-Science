@@ -1,0 +1,8 @@
+w = float(input("Enter width: \n"))
+l = float(input("Enter length: \n"))
+print(w*l)
+
+w = float(input("Enter width: \n"))
+l = float(input("Enter length: \n"))
+h = float(input("Enter height: \n"))
+print(w*h*l)
