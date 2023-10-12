@@ -1,0 +1,100 @@
+fox=0
+chicken=0
+grain=0
+farmer=0
+x = False
+if fox==1 and chicken==1 and grain==1 and farmer==1:
+  x=True
+  
+print("A fox, chicken and a bag of grain wait by the side of a river.")
+print("Which item will you take in your rowboat to the other side?")
+print("fox, chicken, grain or farmer?")
+
+while not x:
+  # GO THERE
+  rowedThere = False
+  while rowedThere == False:
+    choice = input("Who will you bring from the 1st side?: \n")
+    if choice == "fox":
+      if fox == 0:
+        fox+=1
+        farmer+=1
+        rowedThere = True
+      else:
+        print("The fox is not on the other side. Choose someone else.")
+    elif choice == "chicken":
+      if chicken == 0:
+        chicken+=1
+        farmer+=1
+        rowedThere = True
+      else:
+        print("The chicken is not on the other side. Choose someone else.")
+    elif choice == "grain":
+      if grain == 0:
+        grain+=1
+        farmer+=1
+        rowedThere = True
+      else:
+        print("The grain is not on the other side. Choose someone else.")
+    else:
+      farmer+=1
+      rowedThere = True
+  if chicken == 0 and fox == 0:
+    print("Chicken was eaten by fox")
+    exit()
+  elif chicken == 0 and grain == 0:
+    print("Grain was eaten by chicken")
+    exit()
+  print("CURRENT STATUS")
+  print("0 means it is on this side and 1 means it is on the other side")
+  print(f"The farmer is {farmer}")
+  print(f"The grain is {grain}")
+  print(f"The chicken is {chicken}")
+  print(f"The fox is {fox}")
+  if fox==1 and chicken==1 and grain==1 and farmer==1:
+    print("Congratulations, you won!")
+    exit()
+  # COME BACK
+  choice = input("Will you take anyone from the 2nd side? y/n: \n")
+  if choice == "y":
+    rowedBack = False
+    while rowedBack == False:
+      choice = input("Who will you choose?: \n")
+      if choice == "fox":
+        if fox == 1:
+          fox-=1
+          farmer-=1
+          rowedBack = True
+        else:
+          print("The fox is not on the other side. Choose someone else.")
+      elif choice == "chicken":
+        if chicken == 1:
+          chicken-=1
+          farmer-=1
+          rowedBack = True
+        else:
+          print("The chicken is not on the other side. Choose someone else.")
+      elif choice == "grain":
+        if grain == 1:
+          grain-=1
+          farmer-=1
+          rowedBack = True
+        else:
+          print("The grain is not on the other side. Choose someone else.")
+  else:
+    farmer-=1
+  if chicken == 1 and fox == 1:
+    print("Chicken was eaten by fox")
+    exit()
+  elif chicken == 1 and grain == 1:
+    print("Grain was eaten by chicken")
+    exit()
+  if fox==1 and chicken==1 and grain==1 and farmer==1:
+    print("Congratulations, you won!")
+    exit()
+  print("CURRENT STATUS")
+  print("0 means it is on this side and 1 means it is on the other side")
+  print(f"The farmer is {farmer}")
+  print(f"The grain is {grain}")
+  print(f"The chicken is {chicken}")
+  print(f"The fox is {fox}")
