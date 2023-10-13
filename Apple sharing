@@ -1,0 +1,4 @@
+students = int(input("Please enter the amount of students: \n"))
+apples = int(input("Please enter the amount of apples: \n"))
+print(f"Each student will get {apples // students} apples")
+print(f"There will be {apples % students} apples left in the basket")
