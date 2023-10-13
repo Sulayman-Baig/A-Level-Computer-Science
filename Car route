@@ -1,0 +1,7 @@
+speed = int(input("How many kilometers can the car cover in 1 day? \n"))
+length = int(input("Enter the distance: \n"))
+rawTime = length/speed
+if (str(length/speed)[2]) == 0:
+    print(f"It will take {rawTime} days")
+else:
+    print(f"It will take {int(rawTime)+1} days")
