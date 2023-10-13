@@ -1,0 +1,16 @@
+k = int(input("Pick a number between 1 and 365: \n"))
+K = k%7
+if K == 0:
+    print("Wednesday")
+elif K == 1:
+    print("Thursday")
+elif K == 2:
+    print("Friday")
+elif K == 3:
+    print("Saturday")
+elif K == 4:
+    print("Sunday")
+elif K == 5:
+    print("Monday")
+else:
+    print("Tuesday")
