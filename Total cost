@@ -1,0 +1,9 @@
+a = int(input("How many dollars does it cost? \n"))
+b = int(input("How many cents does it cost? \n"))
+n = int(input("How many will you buy? \n"))
+A = a*n
+B = b*n
+if B >= 100:
+    A += B//100
+    B -= (B//100)*100
+print(f"It costs {A} dollars and {B} cents")
