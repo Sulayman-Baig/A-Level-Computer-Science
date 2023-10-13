@@ -1,0 +1,2 @@
+sec = int(input("Please enter how many seconds it has been since midnight: \n"))
+print(f"It has been {sec // 3600} hours since midnight or rather {sec // 60} minutes since midnight")
