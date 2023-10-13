@@ -39,10 +39,10 @@ while not x:
     else:
       farmer+=1
       rowedThere = True
-  if chicken == 0 and fox == 0:
+  if chicken == 0 and fox == 0 and farmer==1:
     print("Chicken was eaten by fox")
     exit()
-  elif chicken == 0 and grain == 0:
+  elif chicken == 0 and grain == 0 and farmer==1:
     print("Grain was eaten by chicken")
     exit()
   print("CURRENT STATUS")
@@ -83,10 +83,10 @@ while not x:
           print("The grain is not on the other side. Choose someone else.")
   else:
     farmer-=1
-  if chicken == 1 and fox == 1:
+  if chicken == 1 and fox == 1 and farmer==0:
     print("Chicken was eaten by fox")
     exit()
-  elif chicken == 1 and grain == 1:
+  elif chicken == 1 and grain == 1 and farmer==0:
     print("Grain was eaten by chicken")
     exit()
   if fox==1 and chicken==1 and grain==1 and farmer==1:
