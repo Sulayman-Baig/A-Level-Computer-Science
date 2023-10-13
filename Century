@@ -1,0 +1,5 @@
+year = input("Enter year: \n")
+if year[-1:] == "1":
+    print(f"It is century number {int(year[:-2])+1}")
+else:
+    print(f"It is century number {year[:-2]}")
