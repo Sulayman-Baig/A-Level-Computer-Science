@@ -1,0 +1,3 @@
+num = input("Please enter an integer: \n")
+length = len(num)
+print(f"The tens digit is {num[length-2]}")
