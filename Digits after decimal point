@@ -1,0 +1,4 @@
+number = input("Please enter a positive real/float: \n")
+for i in range(0,len(number)):
+    if number[i] == '.':
+        print(f"The digit to the right of the decimal point is {number[i+1]}")
