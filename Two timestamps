@@ -1,0 +1,11 @@
+h1 = int(input("Enter the first timestamp's hours: \n"))
+m1 = int(input("Enter the first timestamp's minutes: \n"))
+s1 = int(input("Enter the first timestamp's seconds: \n"))
+h2 = int(input("Enter the second timestamp's hours: \n"))
+m2 = int(input("Enter the second timestamp's minutes: \n"))
+s2 = int(input("Enter the second timestamp's seconds: \n"))
+timePassed = 0
+timePassed += (h2-h1)*3600
+timePassed += (m2-m1)*60
+timePassed += s2-s1
+print(f"It has been {timePassed} seconds between the two timestamps")
