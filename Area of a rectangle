@@ -1,0 +1,3 @@
+width = float(input("Enter the length: \n"))
+height = float(input("Enter the height: \n"))
+print(f"The area of the rectangle is {width*height}")
